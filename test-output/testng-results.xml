@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-01-15T19:13:48Z" name="Default suite" finished-at="2025-01-15T19:13:49Z" duration-ms="763">
+    <groups>
+    </groups>
+    <test started-at="2025-01-15T19:13:48Z" name="Default test" finished-at="2025-01-15T19:13:49Z" duration-ms="763">
+      <class name="utility.Excel_Read_Write">
+        <test-method signature="getExcel_Data()[pri:0, instance:utility.Excel_Read_Write@61c4eee0]" started-at="2025-01-16T00:43:48Z" name="getExcel_Data" finished-at="2025-01-16T00:43:49Z" duration-ms="728" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getExcel_Data -->
+      </class> <!-- utility.Excel_Read_Write -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
