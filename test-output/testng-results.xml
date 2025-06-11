@@ -1,17 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-15T19:13:48Z" name="Default suite" finished-at="2025-01-15T19:13:49Z" duration-ms="763">
+  <suite started-at="2025-06-11T20:23:04Z" name="Suite" finished-at="2025-06-11T20:23:16Z" duration-ms="12644">
     <groups>
     </groups>
-    <test started-at="2025-01-15T19:13:48Z" name="Default test" finished-at="2025-01-15T19:13:49Z" duration-ms="763">
-      <class name="utility.Excel_Read_Write">
-        <test-method signature="getExcel_Data()[pri:0, instance:utility.Excel_Read_Write@61c4eee0]" started-at="2025-01-16T00:43:48Z" name="getExcel_Data" finished-at="2025-01-16T00:43:49Z" duration-ms="728" status="PASS">
+    <test started-at="2025-06-11T20:23:04Z" name="Test" finished-at="2025-06-11T20:23:16Z" duration-ms="12644">
+      <class name="com.tests.TestClass1">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.tests.TestClass1@6ac13091]" started-at="2025-06-12T01:53:04Z" name="setUp" finished-at="2025-06-12T01:53:10Z" duration-ms="6154" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getExcel_Data -->
-      </class> <!-- utility.Excel_Read_Write -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.tests.TestClass1@6ac13091]" started-at="2025-06-12T01:53:10Z" name="beforeTest" finished-at="2025-06-12T01:53:10Z" depends-on-methods="com.test.ui.actions.BaseTest.setUp" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.tests.TestClass1@6ac13091]" started-at="2025-06-12T01:53:10Z" name="setUp" finished-at="2025-06-12T01:53:13Z" duration-ms="2908" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.tests.TestClass1@6ac13091]" started-at="2025-06-12T01:53:13Z" name="beforeMethod" finished-at="2025-06-12T01:53:13Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="TC1()[pri:0, instance:com.tests.TestClass1@6ac13091]" started-at="2025-06-12T01:53:13Z" name="TC1" finished-at="2025-06-12T01:53:16Z" duration-ms="3013" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC1 -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.tests.TestClass1@6ac13091]" started-at="2025-06-12T01:53:16Z" name="afterClass" finished-at="2025-06-12T01:53:16Z" duration-ms="411" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.tests.TestClass1@6ac13091]" started-at="2025-06-12T01:53:16Z" name="afterMethod" finished-at="2025-06-12T01:53:16Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.tests.TestClass1@6ac13091]" started-at="2025-06-12T01:53:16Z" name="afterTest" finished-at="2025-06-12T01:53:16Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.tests.TestClass1@6ac13091]" started-at="2025-06-12T01:53:16Z" name="closeBrowser" finished-at="2025-06-12T01:53:16Z" depends-on-methods="com.tests.TestClass1.afterTest" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.tests.TestClass1 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

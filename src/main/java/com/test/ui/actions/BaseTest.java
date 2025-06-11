@@ -17,7 +17,7 @@ public class BaseTest {
 	
 	
 	@Parameters("Browser")
-	//	@BeforeClass
+	@BeforeClass
 	@BeforeTest
 	public  void setUp(String Browser) {
 		df=new DriverFactory();
