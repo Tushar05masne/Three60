@@ -9,11 +9,10 @@ import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
-import org.testng.annotations.Test;
 
 public class Excel_Read_Write {
 	
-	@Test
+	//@Test
 	public void getExcel_Data() throws FileNotFoundException, InvalidFormatException {
 		
 		FileInputStream ip=new FileInputStream("./src/main/resources/com/test/resources/data/IN_PUT.xlsx");

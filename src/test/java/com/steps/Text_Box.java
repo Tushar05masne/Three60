@@ -1,9 +1,10 @@
 package com.steps;
 
 import com.pages.Page_Text_Box;
-import com.test.ui.actions.BaseTest;
+import com.test.driverfactory.DriverFactory;
+//import com.test.ui.actions.BaseTest;
 
-public class Text_Box extends BaseTest {
+public class Text_Box extends DriverFactory {
 	
 	Page_Text_Box Obj_Page_Text_Box=new Page_Text_Box(driver);
 	

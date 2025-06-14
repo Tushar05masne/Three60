@@ -5,11 +5,12 @@ import org.testng.annotations.Test;
 import com.steps.Radio_button;
 import com.steps.Text_Box;
 import com.steps.Web_Tables;
-import com.test.ui.actions.BaseTest;
+import com.test.driverfactory.DriverFactory;
 
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
@@ -17,7 +18,7 @@ import org.testng.annotations.AfterTest;
 
 
 
-public class TestClass1 extends BaseTest {
+public class TestClass1 {
 	
 
 
@@ -59,17 +60,21 @@ public class TestClass1 extends BaseTest {
 	public void afterMethod() {
 
 	}
-//
-//	@Parameters("Browser")
-//	@BeforeClass
-//	public void beforeClass(String Browser) {
-//		Browser="chrome";
-//		initDriver(Browser);
-//	}
+	@Parameters({"Browser"})
+	@BeforeClass
+	public void beforeClass(String Browser) {
+		//Browser="chrome";
+		WebDriver driver;
+		DriverFactory df;
+		//static boolean flag=true;
+		df=new DriverFactory();
+		driver=df.initDriver(Browser);
+		//initDriver(Browser);
+	}
 
 	@AfterClass
 	public void afterClass() {
-		closeBrowser();
+		//closeBrowser();
 	}
 
 	@BeforeTest
