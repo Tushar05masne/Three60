@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test name="Default test(failed)">
+<suite thread-count="3" parallel="methods" name="Failed suite [ParallelMethodSuite]">
+  <test parallel="methods" name="ParallelMethodsTest(failed)">
     <classes>
       <class name="com.tests.TestClass1">
         <methods>
+          <include name="TC4"/>
           <include name="beforeClass"/>
+          <include name="TC3"/>
           <include name="TC2"/>
           <include name="beforeMethod"/>
+          <include name="TC1"/>
           <include name="afterClass"/>
           <include name="afterTest"/>
           <include name="beforeTest"/>
@@ -15,5 +18,5 @@
         </methods>
       </class> <!-- com.tests.TestClass1 -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- ParallelMethodsTest(failed) -->
+</suite> <!-- Failed suite [ParallelMethodSuite] -->

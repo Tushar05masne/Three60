@@ -30,7 +30,8 @@ public class TestClass1 {
 
 	}
 
-	  @Test public void TC2() throws InterruptedException {
+	  @Test 
+	  public void TC2() throws InterruptedException {
 	  
 	  Text_Box TextBoxForm = new Text_Box(); TextBoxForm.Fill_TextBox_Form();
 	  
@@ -38,13 +39,15 @@ public class TestClass1 {
 	  
 	  }
 	  
-	  @Test public void TC3() { Radio_button RadioBtn = new Radio_button();
+	  @Test 
+	  public void TC3() { Radio_button RadioBtn = new Radio_button();
 	  
 	  RadioBtn.Operate_radio_Btn();
 	  
 	  }
 	  
-	  @Test public void TC4() {
+	  @Test
+	  public void TC4() {
 	  
 	  System.out.println("TC 4......");
 	  
