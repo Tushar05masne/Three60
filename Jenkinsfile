@@ -46,19 +46,6 @@ pipeline
         }
                 
      
-        stage('Publish Allure Reports') {
-           steps {
-                script {
-                    allure([
-                        includeProperties: false,
-                        jdk: '',
-                        properties: [],
-                        reportBuildPolicy: 'ALWAYS',
-                        results: [[path: '/allure-results']]
-                    ])
-                }
-            }
-        }
         
         
         stage('Publish Extent Report'){
@@ -83,7 +70,7 @@ pipeline
             steps {
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
                     git 'https://github.com/naveenanimation20/Aug2023UIAutomationFW.git'
-                    sh "mvn clean test -Dsurefire.suiteXmlFiles=src/test/resources/testrunners/testng_sanity.xml"
+                    sh "mvn clean test -Dsurefire.suiteXmlFiles=Three60/parallel.xml"
                     
                 }
             }
