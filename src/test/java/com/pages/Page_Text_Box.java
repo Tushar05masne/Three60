@@ -10,7 +10,7 @@ import com.test.ui.actions.BaseTest;
 public class Page_Text_Box extends BaseTest{
 	
 	@FindBy(xpath ="//*[@id='TextForm']//h1") private WebElement TextBox_Form;
-	@FindBy(linkText="text-box.php") private WebElement TextBox_Tab;
+	@FindBy(xpath="//*[@class='list-group-item']") private WebElement TextBox_Tab;
 	////*[@id='fullname']
 	@FindBy(id="fullname") private WebElement First_Name;
 	@FindBy(id="email") private WebElement Email_ID;
@@ -22,8 +22,10 @@ public class Page_Text_Box extends BaseTest{
 	}
 	 public void Fill_TextBox_Form() throws InterruptedException {
 		 
+		 Thread.sleep(8000);
+
 		 TextBox_Tab.click();
-		 Thread.sleep(100);
+		 Thread.sleep(1000);
 		 TextBox_Form.isDisplayed();
 		 First_Name.sendKeys("Tushar Masne");
 		 Email_ID.sendKeys("tushar.masne@gmail.com;");

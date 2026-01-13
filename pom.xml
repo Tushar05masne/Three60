@@ -29,6 +29,13 @@
     <version>7.8.0</version>
     <scope>test</scope>
 </dependency>
+<dependency>
+    <groupId>io.appium</groupId>
+    <artifactId>java-client</artifactId>
+    <version>8.5.1</version> <!-- or latest -->
+</dependency>
+
+
 
 <!-- https://mvnrepository.com/artifact/com.oracle.database.jdbc/ojdbc8 -->
 <dependency>

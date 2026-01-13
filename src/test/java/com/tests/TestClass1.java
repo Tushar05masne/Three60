@@ -33,14 +33,17 @@ public class TestClass1 {
 	  @Test 
 	  public void TC2() throws InterruptedException {
 	  
-	  Text_Box TextBoxForm = new Text_Box(); TextBoxForm.Fill_TextBox_Form();
+	  Text_Box TextBoxForm = new Text_Box(); 
+	  Thread.sleep(3000);
+	  TextBoxForm.Fill_TextBox_Form();
 	  
 	  System.out.println("Hello TC2 executed");
 	  
 	  }
 	  
 	  @Test 
-	  public void TC3() { Radio_button RadioBtn = new Radio_button();
+	  public void TC3() { 
+		  Radio_button RadioBtn = new Radio_button();
 	  
 	  RadioBtn.Operate_radio_Btn();
 	  
