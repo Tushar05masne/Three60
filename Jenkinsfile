@@ -4,7 +4,7 @@ pipeline {
         stage('Checkout') {
             steps {
 
-                git 'https://github.com/Tushar05masne/Three60.git'
+               git branch: 'master123', url: 'https://github.com/Tushar05masne/Three60.git'
 
             }
         }
