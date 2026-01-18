@@ -3,7 +3,9 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/Tushar05masne/Three60.git'
+
+                git 'https://github.com/Tushar05masne/Three60.git'
+
             }
         }
         stage('Build & Test') {
