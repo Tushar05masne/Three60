@@ -10,7 +10,7 @@ pipeline {
         }
         stage('Build & Test') {
             steps {
-                sh "mvn clean test -Dsurefire.suiteXmlFiles=src/test/resources/testng.xml"
+                bat "mvn clean test -Dsurefire.suiteXmlFiles=src/test/resources/testng.xml"
             }
         }
     }
