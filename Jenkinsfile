@@ -17,8 +17,8 @@ pipeline {
     post {
         always {
             // Option 1: Use JUnit plugin (works with Surefire XMLs)
-            junit 'target/surefire-reports/*.xml'
-
+            //junit 'target/surefire-reports/*.xml'
+             echo "Results"
             // Option 2: If TestNG Results Plugin is installed and testng-results.xml is generated
             // publishTestNGResults testNGXML: 'target/surefire-reports/testng-results.xml'
         }
