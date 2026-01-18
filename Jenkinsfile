@@ -1,18 +1,20 @@
-pipeline 
-{
+pipeline {
     agent any
-    
-                
-        stage('Regression Automation Tests') {
+    stages {
+        stage('Checkout') {
             steps {
-                catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-                    git 'https://github.com/Tushar05masne/Three60'
-                    sh "mvn clean test -Dsurefire.suiteXmlFiles=src/test/resources/testng.xml"
-                    
-                }
+                git 'https://github.com/Tushar05masne/Three60'
             }
-            
         }
-               
-        
+        stage('Build & Test') {
+            steps {
+                sh "mvn clean test -Dsurefire.suiteXmlFiles=src/test/resources/testng.xml"
+            }
+        }
     }
+    post {
+        always {
+            junit 'target/surefire-reports/*.xml'
+        }
+    }
+}
