@@ -13,6 +13,12 @@ pipeline {
                 bat "mvn clean test -Dsurefire.suiteXmlFiles=src/test/resources/testng.xml"
             }
         }
+        stage('Build') {
+    steps {
+        bat 'mvn clean compile -Dsurefire.suiteXmlFiles=src/test/resources/testng.xml'
+    }
+}
+
     }
     post {
         always {
