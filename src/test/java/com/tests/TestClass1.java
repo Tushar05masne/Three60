@@ -27,6 +27,7 @@ public class TestClass1 {
 
 		Web_Tables wt = new Web_Tables();
 		wt.getTableRows();
+		System.out.println("Hi TC2 run completed");
 
 	}
 
@@ -38,6 +39,8 @@ public class TestClass1 {
 	  TextBoxForm.Fill_TextBox_Form();
 	  
 	  System.out.println("Hello TC2 executed");
+	  System.out.println("Hello TC2 executed");
+
 	  
 	  }
 	  
