@@ -10,6 +10,9 @@ import com.test.driverfactory.DriverFactory;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
+
+import java.io.IOException;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeTest;
@@ -71,7 +74,7 @@ public class TestClass1 {
 	}
 	@Parameters({"Browser"})
 	@BeforeClass
-	public void beforeClass(String Browser) {
+	public void beforeClass(String Browser) throws IOException {
 		//Browser="chrome";
 		WebDriver driver;
 		DriverFactory df;
