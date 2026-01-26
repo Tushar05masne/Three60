@@ -2,8 +2,9 @@
 *.class
 
 # Ignore build directories
-/target/
-/bin/
+target/
+bin/
+
 
 # Ignore TestNG output
 test-output/
