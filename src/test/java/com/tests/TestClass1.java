@@ -32,6 +32,8 @@ public class TestClass1 {
 		wt.getTableRows();
 		System.out.println("Hi TC2 run completed");
 		System.out.println("Hi TC2 run completed");
+		System.out.println("Hi TC2 run completed");
+		System.out.println("Hi TC2 run completed");
 
 
 	}
