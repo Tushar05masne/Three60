@@ -3,13 +3,13 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'mvn clean install'
+        bat 'mvn clean install'
       }
     }
     stage('SonarQube Analysis') {
       steps {
         withSonarQubeEnv('MySonarQubeServer') {
-          sh 'mvn sonar:sonar'
+          bat 'mvn sonar:sonar'
         }
       }
     }
