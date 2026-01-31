@@ -31,6 +31,10 @@ public class TestClass1 {
 		Web_Tables wt = new Web_Tables();
 		wt.getTableRows();
 		System.out.println("Hi TC2 run completed");
+
+		System.out.println("Hi TC2 run completed");
+		System.out.println("Hi TC2 run completed");
+		System.out.println("Hi TC2 run completed");
 		//System.out.println("Hi TC2 run completed");
 
 
